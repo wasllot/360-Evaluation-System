@@ -1,0 +1,196 @@
+/* Global Styles */
+:root {
+    --primary-color: #333;
+    --secondary-color: #dc004e;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --error-color: #f44336;
+    --background-color: #f5f5f5;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+  }
+  
+  /* Layout */
+  .page-container {
+    padding: 24px;
+    background-color: var(--background-color);
+    min-height: calc(100vh - 64px);
+  }
+  
+  .content-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  
+  /* Forms */
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  
+  /* Tables */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .custom-table th {
+    background-color: #f5f5f5;
+    color: var(--text-primary);
+    font-weight: 600;
+    text-align: left;
+    padding: 16px;
+  }
+  
+  .custom-table td {
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .custom-table tr:hover {
+    background-color: #f8f8f8;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #222;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgba(51, 51, 51, 0.1);
+  }
+  
+  /* Status Badges */
+  .status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .status-badge.warning {
+    background-color: #fff3e0;
+    color: #ef6c00;
+  }
+  
+  .status-badge.error {
+    background-color: #ffebee;
+    color: #c62828;
+  }
+  
+  /* Cards */
+  .dashboard-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .page-container {
+      padding: 16px;
+    }
+  
+    .form-container {
+      padding: 16px;
+    }
+  
+    .form-actions {
+      flex-direction: column;
+    }
+  
+    .btn-primary,
+    .btn-secondary {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+  
+  main.MuiBox-root{
+    margin-left: 10px !important;
+  }
